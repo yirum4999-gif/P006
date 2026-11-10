@@ -1,0 +1,130 @@
+.modalOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 9999; */
+}
+
+.signupModal{
+    width: max-content;
+    min-width: 500px;
+    padding: 30px;
+
+    background: white;
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+.title{
+    text-align: center;
+    margin: 0 0 25px;
+    padding: 10px;
+}
+
+.signupInput{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.inputRow {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 70px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.inputRow > :first-child {
+    display: grid;
+    grid-template-columns: 100px minmax(0, 1fr);
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
+    width: 100%;
+}
+
+.inputRow label{
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.inputRow input {
+    display: block;
+    padding: 0;
+    width: 100%;
+    min-width: 0;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.inputRow input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px #2563eb;
+}
+
+.inputRow input.error {
+    border: 1px solid #ff0000;
+}
+
+.inputRow button{
+    justify-self: center;
+    padding: 0 10px;
+    height: 30px;
+
+    white-space: nowrap;
+    color: white;
+    background-color: #2563eb;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.inputRow button > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.btnGroup{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.btnGroup button {
+    justify-self: center;
+    padding: 0 10px;
+    height: 30px;
+    white-space: nowrap;
+    color: white;
+    background-color: #2563eb;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.errMessage{
+    grid-column: 2 / -1;
+    margin: 0;
+    color: #ff0000;
+    font-weight: bold;
+}
+

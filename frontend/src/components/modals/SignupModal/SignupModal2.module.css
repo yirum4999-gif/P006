@@ -1,0 +1,133 @@
+.modalOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 9999;*/
+}
+
+.signupModal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: max-content;
+    min-width: 500px;
+    padding: 30px;
+
+    background: white;
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+.title{
+    align-self: stretch;
+    box-sizing: border-box;
+
+    font-weight: 700;
+}
+
+.signupModal form {
+    align-self: stretch;
+}
+
+.signupInput {
+    width: 100%;
+    border-top: 3px solid #222;
+}
+
+.signupTable {
+    margin: 15px 0px;
+    width: 100%;
+    border-spacing: 0 10px;
+}
+
+
+.signupTable th {
+    position: relative;
+    padding-right: 15px;
+}
+
+.signupTable th::after {
+    content: "";
+    position: absolute;
+
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 2px;
+    height: 20px;
+
+    background-color: #ccc;
+}
+
+.signupTable td:first-of-type {
+    padding-left: 15px;
+}
+
+.signupInput th label{
+    display: flex;
+    justify-content: start;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.signupInput td {
+    vertical-align: middle;
+}
+
+.signupInput td input{
+    min-height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.signupInput td input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px #2563eb;
+}
+
+.signupInput td input.err {
+    border: 1px solid #ff0000;
+}
+
+.signupInput td:last-child {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.button {
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    min-height: 30px;
+
+    color: white;
+    background-color: #2563eb;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btnGroup{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.errMessage{
+    grid-column: 2 / -1;
+    margin: 0;
+    color: #ff0000;
+    font-weight: bold;
+}

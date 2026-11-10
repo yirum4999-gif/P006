@@ -1,0 +1,155 @@
+.modalOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 9999;
+}
+
+/* Modal Container */
+.loginModal {
+    width: 470px;
+    max-width: calc(100vw - 32px);
+    padding: 30px;
+
+    background: white;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+/* 전체 요소 box-sizing */
+.loginModal,
+.loginModal * {
+    box-sizing: border-box;
+}
+
+/* Modal Content */
+.loginContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Title */
+.loginTitle {
+    text-align: center;
+    margin: 0 0 25px;
+    padding: 10px;
+}
+
+/* Input Container */
+.loginInput {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 100px;
+    grid-template-rows: auto auto;
+
+    gap: 15px 10px;
+    width: 100%;
+}
+
+/* ID / PW Row */
+.inputRow {
+    display: grid;
+    grid-template-columns: 75px minmax(0, 1fr);
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+
+    grid-column: 1;
+}
+
+/* Label */
+.inputRow label {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Input */
+.inputRow input {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Login Button */
+.submitButton {
+    grid-column: 2;
+    grid-row: 1 / 3;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #3182ce;
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* Options */
+.loginOptions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.loginOptions label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.loginOptions a {
+    color: #3182ce;
+    text-decoration: none;
+}
+
+.signupButton {
+    border: none;
+    padding: 0;
+
+    background: transparent;
+    color: #3182ce;
+
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.signupButton:hover {
+    text-decoration: underline;
+}
+
+/* Close Button */
+.closeArea {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.closeButton {
+    border: none;
+    background: transparent;
+    color: #3182ce;
+    cursor: pointer;
+}
