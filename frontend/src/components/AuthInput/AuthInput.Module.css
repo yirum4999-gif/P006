@@ -1,0 +1,7 @@
+.authInput {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 8px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
