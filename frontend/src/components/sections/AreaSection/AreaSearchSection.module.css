@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    width: 100%;
+}
+
+/* Popular Areas */
+
+.popularAreas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+
+    width: 100%;
+}
+
+/* Area Groups */
+
+.areaGroups {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.areaGroup {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.areaLinks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 16px;
+}
