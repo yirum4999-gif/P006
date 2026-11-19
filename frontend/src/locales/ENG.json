@@ -1,0 +1,47 @@
+{
+  "header": {
+    "SearchPH": "검색어를 입력해주세요",
+    "SearchBtn" : "Search"
+  },
+  "login": {
+    "title": "Login",
+    "username": "ID",
+    "usernamePlaceholder": "Enter your ID",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "submit": "Login",
+    "saveName": "Remember ID",
+    "saveUser": "Auto Login",
+    "signup": "Sign Up",
+    "close": "Close"
+  },
+  "signup" : {
+    "title" : "Sign Up",
+    "userRoles" : "",
+    "username" : "ID",
+    "usernamePH": "",
+    "usernameCheck" : "Check",
+    "email" : "E-Mail",
+    "emailPH": "",
+    "emailCheck" : "Check",
+    "nickName" : "User name",
+    "nicknameCheck" : "Check",
+    "nicknamePH" : "",
+    "password" : "Password",
+    "passwordPH": "",
+    "passwordConfirm" : "Confirm PW",
+    "passwordConfirmPH" : "",
+    "userRole" : "User",
+    "shopRole" : "Sole Proprietor",
+    "submit" : "Sign Up",
+    "cancel" : "Cancel"
+  },
+  "footerConfig" : {
+    "projectCaption": "이 웹사이트는 과제 프로젝트 WEB 페이지 입니다. 무단으로 변경, 영리적 이용에 사용하실 수 없습니다.",
+    "pageName" : "munch web app",
+    "localAddress" : "location address",
+    "startAt" : "started: ex-YYYY-MM-DD",
+    "ownerName" : "overseer or admin name TEL: 03-000-0000",
+    "pageRegisterAt" : "registed: ex-YYYY-MM-DD"
+  }
+}

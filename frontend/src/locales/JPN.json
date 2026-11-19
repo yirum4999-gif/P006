@@ -1,0 +1,168 @@
+{
+  "header": {
+    "SearchPH": "검색어를 입력해주세요",
+    "SearchBtn" : "検索"
+  },
+  "login": {
+    "title": "ログイン",
+    "username": "ユーザーID",
+    "usernamePlaceholder": "IDを入力してください",
+    "password": "パスワード",
+    "passwordPlaceholder": "パスワードを入力してください",
+    "submit": "ログイン",
+    "saveName": "IDを保存",
+    "saveUser": "自動ログイン",
+    "signup": "会員登録",
+    "close": "閉じる"
+  },
+  "signup" : {
+    "title" : "会員登録",
+    "userRoles" : "会員種別",
+    "username" : "ID",
+    "usernamePH": "",
+    "usernameCheck" : "重複確認",
+    "email" : "メール",
+    "emailPH": "",
+    "emailCheck" : "重複確認",
+    "nickName" : "ユーザーネーム",
+    "nicknameCheck" : "重複確認",
+    "nicknamePH" : "",
+    "password" : "パスワード",
+    "passwordPH": "",
+    "passwordConfirm" : "パスワード確認",
+    "passwordConfirmPH" : "",
+    "userRole" : "一般会員",
+    "shopRole" : "店舗運営",
+    "submit" : "登録",
+    "cancel" : "取消"
+  },
+  "store" : {
+    "title" : "新店・キャンペーン"
+  },
+  "card" : {
+    "types": {
+      "newOpen": "新規オープン",
+      "promotion": "プロモーション"
+    },
+    "items": {
+      "I001": {
+        "title": "新しい店舗がオープンしました",
+        "description": "新しくオープンした店舗をご紹介します。"
+      },
+      "P001": {
+        "title": "プロモーション 001",
+        "description": "プロモーション 001 の説明です。"
+      },
+      "P002": {
+        "title": "プロモーション 002",
+        "description": "プロモーション 002 の説明です。"
+      },
+      "P003": {
+        "title": "プロモーション 003",
+        "description": "プロモーション 003 の説明です。"
+      }
+    }
+  },
+  "area" : {
+    "title" : "地域から探す"
+  },
+  "genre": {
+    "title": "ジャンルから探す",
+    "items": {
+      "sushi": {
+        "title": "寿司",
+        "description": "新鮮なネタと職人の技が光る"
+      },
+      "ramen": {
+        "title": "ラーメン",
+        "description": "こだわりのスープと麺"
+      },
+      "udon": {
+        "title": "うどん",
+        "description": "コシのある麺と出汁の旨み"
+      },
+      "donburi": {
+        "title": "丼",
+        "description": "人気の丼ものが勢揃い"
+      },
+      "yakiniku": {
+        "title": "焼肉",
+        "description": "香ばしく焼き上げたお肉"
+      },
+      "tenpura": {
+        "title": "天ぷら",
+        "description": "揚げたてサクサクの天ぷら"
+      }
+    },
+    "groups": {
+      "cuisine": "料理ジャンル",
+      "drinks" : "ドリンクバー",
+      "noodles": "麺料理",
+      "meat": "肉料理"
+    },
+    "tags": {
+      "chinese": "中華料理",
+      "japanese": "和食",
+      "korean": "韓国料理",
+      "western": "洋食店",
+      "italian": "イタリアン",
+      "dessert": "デザート",
+      "ethnic" : "エスニック料理",
+      "izakaya": "居酒屋",
+      "tachinomi": "立ち飲み",
+      "wineBar": "ワイナリー",
+      "liveBar": "ライブバー",
+      "cocktailBar": "カクテル",
+      "diningBar": "ダイニングバー",
+      "ramen": "ラーメン",
+      "soba": "そば",
+      "udon": "うどん",
+      "yakitori": "焼き鳥",
+      "tonkatsu": "とんかつ",
+      "gyukatsu": "牛カツ",
+      "steak": "ステーキ",
+      "hambagu": "ハンバーグ"
+    }
+  },
+  "footerConfig" : {
+    "projectCaption": "이 웹사이트는 과제 프로젝트 WEB 페이지 입니다. 무단으로 변경, 영리적 이용에 사용하실 수 없습니다.",
+    "pageName" : "munch web app",
+    "localAddress" : "location address",
+    "startAt" : "started: ex-YYYY-MM-DD",
+    "ownerName" : "overseer or admin name TEL: 03-000-0000",
+    "pageRegisterAt" : "registed: ex-YYYY-MM-DD"
+  },
+  "mypage" : {
+    "title" : "マイページ",
+    "profile": {
+      "title": "プロフィール",
+      "changeProfile": "イメージ変更",
+      "changeNickname": "名前変更"
+    },
+
+    "history": {
+      "title": "利用履歴",
+      "storeName": "店舗名",
+      "date": "予約日",
+      "peopleCount": "人員数",
+      "seatCount": "座席",
+      "status": "予約状況"
+    },
+
+    "reservation": {
+      "type": {
+        "individual": "개인",
+        "group": "그룹",
+        "largeGroup": "단체"
+      },
+      "people": "{{count}}명",
+      "seats": "{{count}}석"
+    },
+
+    "status": {
+      "pending": "예약 대기",
+      "confirmed": "예약 완료",
+      "upcoming": "당일 임박"
+    }
+  }
+}
