@@ -1,0 +1,143 @@
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: auto;
+
+    background: #2563eb;
+    z-index: 100;
+
+    transition: width 0.3s ease;
+}
+
+.sidebar::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: inherit;
+
+    background: #2563eb;
+    z-index: -1;
+}
+
+.sidebarInner {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    min-height: 100vh;
+
+    overflow: hidden;
+}
+
+.sidebarMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px 12px;
+    gap: 12px;
+}
+
+.sidebarItem {
+    width: 100%;
+    min-height: 90px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: transparent;
+    color: white;
+
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.sidebarIcon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+
+    font-size: 28px;
+}
+
+.sidebarLabel {
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.sidebarToggle {
+    position: fixed;
+    top: 50%;
+    left: 100px;
+
+    transform: translateY(-50%);
+
+    width: 25px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: #2563eb;
+    color: white;
+
+    font-size: 17px;
+    cursor: pointer;
+
+    z-index: 101;
+    transition: left 0.3s ease;
+}
+
+/* 펼침 */
+.open {
+    width: 100px;
+}
+
+/* 접힘 */
+.closed {
+    width: 5px;
+}
+
+.closed .sidebarInner {
+    overflow: hidden;
+}
+
+.closed .sidebarMenu {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.closed .sidebarToggle {
+    left: 5px;
+}
+
+@media (max-width: 768px) {
+    .open {
+        width: 220px;
+    }
+
+    .closed .sidebarToggle {
+        left: 18px;
+    }
+}
